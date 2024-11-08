@@ -3,32 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecno Desing Pro</title>
+    <title>Tecno Desing Pro - Innovación y Tecnología</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        /* Estilos generales */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-        main {
-            padding: 20px;
-        }
-        h1, h2, h3 {
+        body {
+            background-color: #f3f4f6;
             color: #333;
         }
+        header, footer {
+            background-color: #2a2a72;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header p {
+            font-style: italic;
+        }
+
+        /* Menú de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #5757d1;
+        }
+
+        /* Secciones */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
         .section {
-            margin-bottom: 20px;
+            margin: 40px 0;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2a2a72;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: url('https://img.icons8.com/ios-filled/16/000000/checked-checkbox.png') no-repeat left center;
+            padding-left: 25px;
+            margin: 10px 0;
+        }
+
+        /* Estilo de testimonios */
+        .testimonial {
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #2a2a72;
+            padding-left: 20px;
+        }
+
+        /* Contacto */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: #555;
+        }
+        .contact-info p, .contact-info a {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer p {
+            margin: 10px 0;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -39,34 +109,71 @@
         <p>Innovación y tecnología a tu alcance</p>
     </header>
 
-    <main>
-        <div class="section">
+    <nav>
+        <a href="#about">Quiénes Somos</a>
+        <a href="#services">Servicios</a>
+        <a href="#why-choose-us">¿Por Qué Elegirnos?</a>
+        <a href="#testimonials">Testimonios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <main class="container">
+        
+        <!-- Sección: Quiénes Somos -->
+        <section id="about" class="section">
             <h2>Quiénes Somos</h2>
-            <p>Tecno Desing Pro es una microempresa dedicada a ofrecer soluciones tecnológicas de calidad. Nos especializamos en diseño, desarrollo e implementación de proyectos tecnológicos que se adaptan a las necesidades de cada cliente.</p>
-        </div>
+            <p>En Tecno Desing Pro, estamos comprometidos con ofrecer soluciones tecnológicas innovadoras y de alta calidad. Somos un equipo apasionado por la tecnología y el diseño, trabajando en la creación de soluciones personalizadas para satisfacer las necesidades específicas de cada cliente.</p>
+        </section>
 
-        <div class="section">
-            <h2>Servicios</h2>
+        <!-- Sección: Servicios -->
+        <section id="services" class="section">
+            <h2>Nuestros Servicios</h2>
+            <p>Nos especializamos en una amplia gama de servicios para ayudarte a lograr tus objetivos tecnológicos:</p>
             <ul>
-                <li>Desarrollo Web</li>
-                <li>Diseño Gráfico</li>
-                <li>Soporte Técnico</li>
-                <li>Consultoría Tecnológica</li>
+                <li>Desarrollo Web: Creamos sitios web modernos, responsivos y adaptados a tu marca.</li>
+                <li>Diseño Gráfico: Diseñamos logotipos, identidad visual y gráficos impactantes.</li>
+                <li>Soporte Técnico: Soluciones rápidas y efectivas para tus necesidades técnicas.</li>
+                <li>Consultoría Tecnológica: Te asesoramos en la elección de las mejores herramientas tecnológicas.</li>
+                <li>Marketing Digital: Estrategias personalizadas para mejorar tu presencia online.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
+        <!-- Sección: ¿Por Qué Elegirnos? -->
+        <section id="why-choose-us" class="section">
             <h2>¿Por Qué Elegirnos?</h2>
-            <p>En Tecno Desing Pro ofrecemos calidad, personalización, experiencia, y profesionalismo en cada proyecto. Estamos al tanto de las últimas tendencias para ofrecerte lo mejor.</p>
-        </div>
+            <p>Con Tecno Desing Pro, tienes la seguridad de trabajar con una empresa que prioriza la satisfacción del cliente y la excelencia en cada proyecto. Ofrecemos:</p>
+            <ul>
+                <li>Calidad y Personalización: Adaptamos nuestros servicios a tus necesidades específicas.</li>
+                <li>Experiencia y Profesionalismo: Contamos con un equipo de expertos altamente capacitados.</li>
+                <li>Innovación Constante: Nos actualizamos continuamente en las últimas tecnologías.</li>
+            </ul>
+        </section>
 
-        <div class="section">
+        <!-- Sección: Testimonios -->
+        <section id="testimonials" class="section">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <p>"Gracias a Tecno Desing Pro, nuestra página web es rápida, atractiva y fácil de usar. No podríamos estar más contentos con el servicio."</p>
+                <strong>- Cliente Satisfecho</strong>
+            </div>
+            <div class="testimonial">
+                <p>"El equipo de Tecno Desing Pro comprendió exactamente lo que necesitábamos y lo hizo realidad. Definitivamente los recomiendo."</p>
+                <strong>- Cliente Entusiasta</strong>
+            </div>
+        </section>
+
+        <!-- Sección: Contacto -->
+        <section id="contact" class="section">
             <h2>Contáctanos</h2>
             <p>¿Tienes un proyecto en mente? ¡Nos encantaría ayudarte a hacerlo realidad!</p>
-            <p><strong>Correo electrónico:</strong> Tasmania666s@gmail.com</p>
-            <p><strong>Teléfono:</strong> +57 3242546790</p>
-            <p>Síguenos en <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
-        </div>
+            <div class="contact-info">
+                <p><strong>Correo electrónico:</strong> <a href="mailto:contacto@tecnodesingpro.com">contacto@tecnodesingpro.com</a></p>
+                <p><strong>Teléfono:</strong> +57 3242546790</p>
+                <p>Síguenos en:</p>
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>
